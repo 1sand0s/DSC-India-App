@@ -1,0 +1,262 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Contact"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dsc.dscindia.Contact" >
+   <ScrollView 
+       android:id="@+id/scrollView7"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentStart="true"
+       android:fadeScrollbars="true"
+       android:verticalScrollbarPosition="right" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="400dip"
+            android:layout_height="45dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/cusbu"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_above="@+id/textView10"
+            android:layout_alignEnd="@+id/textView12"
+            android:layout_toRightOf="@+id/button1"
+            android:background="@drawable/cusbut"
+            android:clickable="true"
+            android:text="Products"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:background="#00ffffff"
+            android:phoneNumber="false"
+            android:text="CONTACT US"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView10"
+            android:text="India office"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_below="@+id/textView11"
+            android:text="DSC india control &amp; machineries Pvt.Ltd No: 240 &amp; 241, bommasandra industrial area, bommasandra jigani link road, Bangalore: 560099, "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="8dip" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/textView12"
+            android:text="Phone:080-27839989, Mob:+91-9740608888 Email: sales@dscindia.co"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="8dip" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView24"
+            android:layout_alignRight="@+id/textView24"
+            android:layout_below="@+id/textView13"
+            android:text="China Head Office"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView21"
+            android:layout_alignRight="@+id/textView21"
+            android:layout_below="@+id/textView14"
+            android:text="Quan Zhou Dong Shan Machine CO.,LTD. Post Code：362100"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="8dip" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17"
+            android:layout_below="@+id/textView15"
+            android:text="Tel：0595-27656088 Fax：0595-27656099 Website：www.dsccompany.com                 Email：Products and Service sales@dsccompany.com                          General Inguiry info@dsccompany.com"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="8dip" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="15dip"
+            android:layout_below="@+id/textView16"
+            android:layout_toLeftOf="@+id/textView25"
+            android:layout_toStartOf="@+id/textView25"
+            android:text="International Sales Rep."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/textView17"
+            android:text="Adam Chen"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="8dip" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17"
+            android:layout_below="@+id/textView18"
+            android:text="Email：adamchen@dsccompany.com"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="8dip" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:layout_below="@+id/textView19"
+            android:text="Taiwan Office"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView20"
+            android:layout_alignStart="@+id/textView20"
+            android:layout_below="@+id/textView20"
+            android:text="ZhongZheng S. Road, Taipei, Taiwan"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textIsSelectable="false"
+            android:textSize="8dip" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView21"
+            android:layout_alignStart="@+id/textView21"
+            android:layout_below="@+id/textView21"
+            android:text="+886-986620060"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="8dip" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_alignLeft="@+id/textView22"
+            android:layout_alignStart="@+id/textView22"
+            android:layout_below="@+id/textView22"
+            android:text="Canada Office"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView23"
+            android:layout_alignStart="@+id/textView23"
+            android:layout_below="@+id/textView23"
+            android:text="Surrey B.C. Canada    +1-604-7838558"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textIsSelectable="false"
+            android:textSize="8dip" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="200sp"
+            android:layout_height="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView24"
+            android:text="copyrights @ DSC INDIA control &amp; machineries Pvt.Ltd. Bangalore: 560099, phone: 080-27839989, mob: +91-9740608888."
+            android:textColor="#ffa9a9a9"
+            android:textSize="6sp" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/cusbut1"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignRight="@+id/textView20"
+            android:layout_below="@+id/imageView3"
+            android:background="@drawable/cusbut1"
+            android:clickable="true"
+            android:text="Home"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

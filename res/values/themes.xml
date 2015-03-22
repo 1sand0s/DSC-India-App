@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="cusbut" parent="android:style/Widget.Button">
+        <item name="android:buttonStyle">@style/cusbut</item>
+    </style>
+    <style name="cusbut1" parent="android:style/Widget.Button">
+        <item name="android:buttonStyle">@style/cusbut1</item>
+    </style>
+</resources>

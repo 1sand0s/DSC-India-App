@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hex2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".products" >
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/cusbut1"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/cusbut1"
+        android:text="H"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toRightOf="@+id/button1"
+        android:background="#00FFFFFF"
+        android:text="Our Products"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/cusbut1"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/cusbut1"
+        android:text="C"
+        android:textSize="10dip" />
+
+    <com.example.satish1.HexagonMaskView
+        android:id="@+id/imageButton1"
+        android:layout_width="110dip"
+        android:layout_height="230dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/hex16"
+        
+        
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView26"
+        android:background="#00ffffff" />
+
+    <com.example.satish1.HexagonMaskView
+        android:id="@+id/imageButton3"
+        android:layout_width="65dip"
+        android:layout_height="140dip"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:background="@drawable/hex12" />
+
+        <com.example.satish1.HexagonMaskView
+            android:id="@+id/imageButton5"
+            android:layout_width="40dip"
+            android:layout_height="70dip"
+            android:layout_alignLeft="@+id/textView26"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/hex14" />
+
+         <com.example.satish1.HexagonMaskView
+             android:id="@+id/imageButton6"
+             android:layout_width="50dip"
+             android:layout_height="70dip"
+             android:layout_alignParentBottom="true"
+             android:layout_toRightOf="@+id/button1"
+             android:background="@drawable/hex15" />
+
+       <!--    <TextView
+             android:id="@+id/textView32"
+             android:layout_width="115sp"
+             android:layout_height="15sp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignTop="@+id/imageButton3"
+             android:layout_marginTop="26dp"
+             android:text="copyrights @ DSC INDIA control &amp; machineries Pvt.Ltd. Bangalore: 560099, phone: 080-27839989, mob: +91-9740608888."
+             android:textColor="#ffa9a9a9"
+             android:textSize="6sp" />-->
+
+         <com.example.satish1.HexagonMaskView
+             android:id="@+id/imageButton2"
+             android:layout_width="90dip"
+             android:layout_height="150dip"
+             android:layout_below="@+id/imageButton5"
+             android:layout_toRightOf="@+id/imageButton6"
+             android:background="@drawable/hex11" />
+
+         <com.example.satish1.HexagonMaskView
+             android:id="@+id/imageButton4"
+             android:layout_width="50dip"
+             android:layout_height="110dip"
+             android:layout_alignBottom="@+id/imageButton5"
+             android:layout_centerHorizontal="true"
+             android:layout_toLeftOf="@+id/imageButton3"
+             android:layout_marginBottom="10dp"
+             android:layout_marginRight="10dip"
+             android:background="@drawable/hex13" />
+
+</RelativeLayout>

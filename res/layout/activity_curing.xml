@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dsc.dscindia.Pasting"
+    android:background="@drawable/background">
+ <ScrollView 
+       android:id="@+id/scrollView7"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentStart="true"
+       android:fadeScrollbars="true"
+       android:verticalScrollbarPosition="right" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <ImageView
+        android:layout_width="400dip"
+        android:layout_height="45dip"
+        android:id="@+id/imageView10"
+        android:background="@drawable/logo1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="250dip"
+        android:layout_height="57dip"
+        android:id="@+id/imageView11"
+        android:background="@drawable/logo2"
+        android:src="@drawable/logo2"
+        android:layout_below="@+id/imageView10"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/cusbut1"
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:text="Home"
+        android:id="@+id/button6"
+        android:background="@drawable/cusbut1"
+        android:clickable="true"
+        android:textColor="#ff000000"
+        android:textSize="10dip"
+        android:layout_alignWithParentIfMissing="false"
+        android:textStyle="normal"
+        android:layout_below="@+id/imageView11"
+        android:layout_alignLeft="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView11" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:text="Products"
+        android:id="@+id/button7"
+        android:textSize="10dip"
+        android:clickable="true"
+        android:textColor="#ff000000"
+        android:background="#990012"
+        android:textStyle="normal"
+        android:layout_alignTop="@+id/button6"
+        android:layout_toRightOf="@+id/button6"
+        android:layout_toEndOf="@+id/button6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:text="Contact"
+        android:id="@+id/button8"
+        android:textSize="10dip"
+        android:clickable="true"
+        android:textColor="#ff000000"
+        android:background="#ffc8c8c8"
+        android:textStyle="normal"
+        android:layout_alignTop="@+id/button7"
+        android:layout_toRightOf="@+id/button7"
+        android:layout_toEndOf="@+id/button7" />
+
+    <ImageView
+        android:layout_width="500dip"
+        android:layout_height="320dip"
+        android:id="@+id/imageView12"
+        android:background="#ffffffff"
+        android:layout_below="@+id/button6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="CURING &amp; DRYING MACHINE"
+        android:id="@+id/textView29"
+        android:textStyle="bold|italic"
+        android:textColor="#ffa4090a"
+        android:textIsSelectable="false"
+        android:typeface="monospace"
+        android:visibility="visible"
+        android:textSize="17dip"
+        android:layout_alignTop="@+id/imageView12"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="150dip"
+        android:layout_height="250dip"
+        android:id="@+id/imageView14"
+        android:background="@drawable/curingpage"
+        android:layout_below="@+id/textView29"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8" />
+
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="SDG-I Curing &amp; Drying Chamber"
+        android:id="@+id/textView31"
+        android:textColor="#ff000000"
+        android:textStyle="normal|italic"
+        android:textSize="10dip"
+        android:layout_below="@+id/imageView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="120dip"
+        android:layout_height="100dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView14"
+        android:layout_marginTop="48dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/curing" />
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="15sp"
+        android:text="copyrights @ DSC INDIA control &amp; machineries Pvt.Ltd. Bangalore: 560099, phone: 080-27839989, mob: +91-9740608888."
+        android:id="@+id/textView30"
+        android:textColor="#ffa9a9a9"
+        android:textSize="6sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView14"
+        android:layout_alignStart="@+id/imageView14" />
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>
