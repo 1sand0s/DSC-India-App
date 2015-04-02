@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.dsc.dscindia.Vrla"
-    android:background="@drawable/background">
+    android:background="@drawable/hexback">
  <ScrollView 
        android:id="@+id/scrollView7"
        android:layout_width="wrap_content"
@@ -37,15 +37,16 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
+        style="@style/cusbut1"
         android:layout_width="60dip"
         android:layout_height="30dip"
         android:text="Home"
         android:id="@+id/button"
-        android:background="#ffc8c8c8"
+        android:background="@drawable/cusbut"
         android:clickable="true"
         android:textColor="#ff000000"
         android:textSize="10dip"
+        android:alpha="0.7"
         android:layout_alignWithParentIfMissing="false"
         android:layout_below="@+id/imageView6"
         android:layout_alignLeft="@+id/imageView6"
@@ -53,7 +54,7 @@
         android:textStyle="normal" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
+        style="@style/cusbut1"
         android:layout_width="60dip"
         android:layout_height="30dip"
         android:text="Products"
@@ -61,36 +62,146 @@
         android:textSize="10dip"
         android:clickable="true"
         android:textColor="#ff000000"
-        android:background="#990012"
+        android:background="@drawable/cusbut"
         android:layout_alignTop="@+id/button"
         android:layout_toRightOf="@+id/button"
         android:layout_toEndOf="@+id/button"
         android:textStyle="normal" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
+        style="@style/cusbut1"
         android:layout_width="60dip"
         android:layout_height="30dip"
         android:text="Contact"
         android:id="@+id/button5"
         android:textSize="10dip"
         android:clickable="true"
+        android:alpha="0.7"
         android:textColor="#ff000000"
-        android:background="#ffc8c8c8"
+        android:background="@drawable/cusbut"
         android:layout_alignTop="@+id/button4"
         android:layout_toRightOf="@+id/button4"
         android:layout_toEndOf="@+id/button4"
         android:textStyle="normal" />
-
-    <ImageView
-        android:layout_width="500dip"
-        android:layout_height="320dip"
-        android:id="@+id/imageView5"
-        android:background="#ffffffff"
-        android:layout_below="@+id/button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/black"
+	    android:layout_below="@+id/textView27"
+	    android:alpha="0.7"
+	    android:orientation="vertical">
+	    <ImageView
+	        android:id="@+id/image"
+	        android:layout_width="220dip"
+	        android:layout_height="220dip"
+	        android:layout_marginLeft="35dip"
+	        android:layout_marginTop="35dip"
+	        android:background="@drawable/tron8"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="17dip"
+	        android:id="@+id/text1"
+	        android:text="APPLICABILITY"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14dip"
+	        android:id="@+id/text2"
+	        android:text="MOTORCYCLE BATTERY\nUPS BATTERY\nELECTRIC VEHICLE BATTERY\nOTHER BATTERY\n"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="17dip"
+	        android:id="@+id/text3"
+	        android:text="APPLICABLE TO ALLOY"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14dip"
+	        android:id="@+id/text4"
+	        android:text="LEAD ANTIMONY ALLOY\nLEAD CADMIUM ALLOY\nLEAD ANITMONY CADMIUM ALLOY\n"/>
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/text5"
+	        android:textSize="20dip"
+	        android:text="TECHNICAL PARAMETERS\n"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="17dip"
+	        android:id="@+id/text6"
+	        android:text="SPEED OF CASTING AND WELDING"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14dip"
+	        android:id="@+id/text7"
+	        android:text="50-100 CYCLES PER SECOND\n"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="17dip"
+	        android:id="@+id/text8"
+	        android:text="AIR SOURCE"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14dip"
+	        android:id="@+id/text9"
+	        android:text="COMPRESSED AIR OF 0.6Mpa\n"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="17dip"
+	        android:id="@+id/text10"
+	        android:text="AIR CONSUMPTION"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14dip"
+	        android:id="@+id/text11"
+	        android:text="1METER CUBE/MIN\n"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="17dip"
+	        android:id="@+id/text12"
+	        android:text="WATER CONSUMPTION"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14dip"
+	        android:id="@+id/text13"
+	        android:text="2-4L/MIN\n"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="17dip"
+	        android:id="@+id/text14"
+	        android:text="DIMENSION"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14dip"
+	        android:id="@+id/text15"
+	        android:text="2650mm(L)*1200mm(W)*1100mm(H)\n"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="17dip"
+	        android:id="@+id/text16"
+	        android:text="NET WEIGHT"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14dip"
+	        android:id="@+id/text17"
+	        android:text="About 1 Ton\n"/>
+	    
+	    
+	</LinearLayout>
     <TextView
         android:layout_width="200sp"
         android:layout_height="15sp"
@@ -103,44 +214,24 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
+        android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="VRLA COS"
-        android:id="@+id/textView27"
-        android:layout_alignTop="@+id/imageView5"
+        android:layout_below="@+id/button"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold|italic"
+        android:text="VRLA COS"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#ffa4090a"
         android:textIsSelectable="false"
+        android:textSize="17dip"
+        android:textStyle="bold|italic"
         android:typeface="monospace"
-        android:visibility="visible"
-        android:textSize="17dip" />
-
-    <ImageView
-        android:layout_width="120dip"
-        android:layout_height="100dip"
-        android:id="@+id/imageView8"
-        android:adjustViewBounds="true"
-        android:background="@drawable/vrla"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/textView26"
-        android:layout_toStartOf="@+id/textView26" />
-
-    <ImageView
-        android:layout_width="150dip"
-        android:layout_height="250dip"
-        android:id="@+id/imageView9"
-        android:background="@drawable/vrlacostable"
-        android:layout_below="@+id/textView27"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5" />
+        android:visibility="visible" />
 
     <TextView
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView9"
         android:layout_alignEnd="@+id/button"
         android:layout_alignStart="@+id/button"
         android:layout_marginBottom="57dp"

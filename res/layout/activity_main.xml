@@ -17,216 +17,203 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    <Button
-        style="@style/cusbu"
-        android:layout_width="wrap_content"
-        android:layout_height="30dip"
-        android:text="Home"
-        android:id="@+id/button1"
-        android:background="@drawable/cusbut"
-        android:clickable="true"
-        android:textColor="#ff000000"
-        android:textSize="10dip"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignLeft="@+id/imageView2"
-        android:layout_alignStart="@+id/imageView2"
-        android:textStyle="normal"/>
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:background="@drawable/black" >
 
-    <Button
-         style="@style/cusbu"
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="30dip"
-        android:text="Products"
-        android:textSize="10dip"
-        android:clickable="true"
-        android:textColor="#ff000000"
-        android:background="@drawable/cusbut"
-        android:layout_below="@+id/imageView2"
-        android:layout_toRightOf="@+id/button1"
-        android:layout_toEndOf="@+id/button1"
-        android:textStyle="normal"/>
-    
+        <Button
+            android:id="@+id/button2"
+            style="@style/cusbu"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_below="@+id/imageView2"
+            android:background="@drawable/cusbut"
+            android:clickable="true"
+            android:text="Products"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
 
-    <TextView
-        android:layout_width="150dip"
-        android:layout_height="10dip"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="◆ automatic grid casting machine"
-        android:id="@+id/textView"
-        android:textColor="#ffffffff"
-        android:textSize="8dip"
-        android:layout_alignBottom="@+id/textView35"
-        android:layout_toLeftOf="@+id/button3"
-        android:layout_toStartOf="@+id/button3" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView35"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_below="@+id/textView35"
+            android:layout_toStartOf="@+id/button3"
+            android:text="◆ automatic grid casting machine"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="10dip" />
 
-    <TextView
-        android:layout_width="150dip"
-        android:layout_height="10dip"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="◆ 2-side plate pasting machine"
-        android:id="@+id/textView2"
-        android:textColor="#ffffffff"
-        android:textSize="8dip"
-        android:layout_below="@+id/textView4"
-        android:layout_toLeftOf="@+id/button3"
-        android:layout_toStartOf="@+id/button3" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="◆ 2-side plate pasting machine"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="10dip" />
 
-    <TextView
-        android:layout_width="200dip"
-        android:layout_height="10dip"
-        android:text="◆ automatic plate parting/cutting machine"
-        android:id="@+id/textView3"
-        android:textColor="#ffffffff"
-        android:textSize="8dip"
-        android:layout_below="@+id/textView2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        <TextView
+            android:id="@+id/textView3"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:text="◆ automatic plate parting/cutting machine"
+            android:textColor="#ffffffff"
+            android:textSize="10dip" />
 
-    <TextView
-        android:layout_width="200dip"
-        android:layout_height="10dip"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="◆ automatic parts/terminal casting machine"
-        android:id="@+id/textView4"
-        android:textColor="#ffffffff"
-        android:textSize="8dip"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        <TextView
+            android:id="@+id/textView4"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:text="◆ automatic parts/terminal casting machine"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="10dip" />
 
-    <TextView
-        android:layout_width="500dip"
-        android:layout_height="10dip"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="◆ surface drying line ◆ drying oven ◆ curing chamber"
-        android:id="@+id/textView5"
-        android:textColor="#ffffffff"
-        android:textSize="8dip"
-        android:layout_below="@+id/textView3"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        <TextView
+            android:id="@+id/textView5"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:text="◆ surface drying line ◆ drying oven ◆ curing chamber"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="10dip" />
 
-    <TextView
-        android:layout_width="400dip"
-        android:layout_height="10dip"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="◆ oxide mill(4t,8t,12t) ◆ high quality grid molds"
-        android:id="@+id/textView6"
-        android:textColor="#ffffffff"
-        android:textSize="8dip"
-        android:layout_below="@+id/textView5"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignStart="@+id/textView5" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:text="◆ oxide mill(4t,8t,12t) ◆ high quality grid molds"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="10dip" />
 
-    <TextView
-        android:layout_width="500dip"
-        android:layout_height="10dip"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="◆ all types of battery containers and many more"
-        android:id="@+id/textView7"
-        android:textColor="#ffffffff"
-        android:textSize="8dip"
-        android:layout_below="@+id/textView6"
-        android:layout_alignLeft="@+id/textView6"
-        android:layout_alignStart="@+id/textView6" />
-     <TextView
-        android:layout_width="300dip"
-        android:layout_height="35dip"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="dsc can also assist you in searching all kinds of sources you request in lead acid battery industry. from plates making to battery assembling, we will help you find the best solutions for all your inquiries from taiwan and chinese market."
-        android:id="@+id/textView8"
-        android:textColor="#ffffffff"
-        android:textSize="8dip"
-        android:layout_below="@+id/textView7"
-        android:layout_alignLeft="@+id/textView7"
-        android:layout_alignStart="@+id/textView7" />
-    <TextView
-        android:layout_width="200sp"
-        android:layout_height="25sp"
-        android:text="copyrights @ DSC INDIA control &amp; machineries Pvt.Ltd. Bangalore: 560099, phone: 080-27839989, mob: +91-9740608888."
-        android:id="@+id/textView9"
-        android:textColor="#ffa9a9a9"
-        android:layout_below="@+id/textView8"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="6sp" />
+        <TextView
+            android:id="@+id/textView7"
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:text="◆ all types of battery containers and many more"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="10dip" />
 
-    <Button
-        style="@style/cusbu"
-        android:layout_width="wrap_content"
-        android:layout_height="30dip"
-        android:text="Contact"
-        android:id="@+id/button3"
-        android:textSize="10dip"
-        android:clickable="true"
-        android:textColor="#ff000000"
-        android:background="@drawable/cusbut"
-        android:textStyle="normal"
-        android:layout_alignTop="@+id/button2"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="300dip"
+            android:layout_height="35dip"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/textView7"
+            android:text="dsc can also assist you in searching all kinds of sources you request in lead acid battery industry. from plates making to battery assembling, we will help you find the best solutions for all your inquiries from taiwan and chinese market."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="10dip" />
 
-    <ImageView
-        android:layout_width="400dip"
-        android:layout_height="45dip"
-        android:id="@+id/imageView"
-        android:background="@drawable/logo1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="200sp"
+            android:layout_height="25sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView8"
+            android:text="copyrights @ DSC INDIA control &amp; machineries Pvt.Ltd. Bangalore: 560099, phone: 080-27839989, mob: +91-9740608888."
+            android:textColor="#ffa9a9a9"
+            android:textSize="6sp" />
 
-    <ImageView
-        android:layout_width="250dip"
-        android:layout_height="57dip"
-        android:id="@+id/imageView2"
-        android:background="@drawable/logo2"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/button3"
+            style="@style/cusbu"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignTop="@+id/button2"
+            android:layout_toEndOf="@+id/button2"
+            android:layout_toRightOf="@+id/button2"
+            android:background="@drawable/cusbut"
+            android:clickable="true"
+            android:text="Contact"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
 
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="100dip"
-        android:layout_height="40dip"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button1"
-        android:text="About Us"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#ffffff"
-        android:textSize="15dip"
-        android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="400dip"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/logo1" />
 
-    <TextView
-        android:layout_width="700dip"
-        android:layout_height="170dip"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="“dsc” is located in Quan Zhou,Fu Jian,CHINA. For the Last few decades, dsc specialized in manufacturing machinery used for battery production. Other then the Headquarter China,dsc also have a service center in Delhi INDIA,and one assembling plant in Bangalore INDIA.，which was just established in June 2011.Under the influence of the new situation and industry concept, the company continued to blaze new trails, rapidly developing the global market. dsc now has customers all over Southeast Asia, the Middle East, Europe, Africa and South America. Meanwhile, the company focuses on product details, technical innovation and personnel training. This pursue towards excellence, able disc to introduce number of new designs each year. dsc has numbers of national patents, by virtue of its 13 research and development projects and 10 utility model patents, dsc is the first Taiwan-funded copamy to awarded “Innovation Company” in the region. Compliant with ISO9001: 2008 standard, while actively communicate with the cooperation units within the industry to absorb new ideas, dsc embrace the company motto “to constantly strive for new improvement, and always keep an open-mind”. This philosophy is the driving force for dsc, to strive to go in the forefront of lead-acid battery equipment industry."
-        android:id="@+id/textView34"
-        android:textStyle="normal"
-        android:textSize="8dip"
-        android:textColor="#ffffffff"
-        android:layout_below="@+id/textView33"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="250dip"
+            android:layout_height="57dip"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo2" />
 
-    <TextView
-        android:layout_width="140dip"
-        android:layout_height="25dip"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Our exisiting products consist of:"
-        android:id="@+id/textView35"
-        android:textColor="#ffffffff"
-        android:textSize="8dip"
-        android:layout_below="@+id/textView34"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button2"
+            android:text="About Us"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="15dip"
+            android:textStyle="bold" />
 
-   
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView33"
+            android:text="“dsc” is located in Quan Zhou,Fu Jian,CHINA. For the Last few decades, dsc specialized in manufacturing machinery used for battery production. Other then the Headquarter China,dsc also have a service center in Delhi INDIA,and one assembling plant in Bangalore INDIA.，which was just established in June 2011.Under the influence of the new situation and industry concept, the company continued to blaze new trails, rapidly developing the global market. dsc now has customers all over Southeast Asia, the Middle East, Europe, Africa and South America. Meanwhile, the company focuses on product details, technical innovation and personnel training. This pursue towards excellence, able disc to introduce number of new designs each year. dsc has numbers of national patents, by virtue of its 13 research and development projects and 10 utility model patents, dsc is the first Taiwan-funded copamy to awarded “Innovation Company” in the region. Compliant with ISO9001: 2008 standard, while actively communicate with the cooperation units within the industry to absorb new ideas, dsc embrace the company motto “to constantly strive for new improvement, and always keep an open-mind”. This philosophy is the driving force for dsc, to strive to go in the forefront of lead-acid battery equipment industry."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="10dip"
+            android:textStyle="normal" />
 
-     </RelativeLayout>
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView34"
+            android:text="Our exisiting products consist of:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="10dip" />
+    </RelativeLayout>
+
      </ScrollView>
 
 </RelativeLayout>

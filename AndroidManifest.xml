@@ -6,12 +6,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/tronf"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat" >
+        android:theme="@style/Theme.AppCompat" 
+        android:largeHeap="true">
         <activity
             android:name=".MainActivity"
-            android:label="DSC INDIA" >
+            android:label="DSC INDIA" 
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +23,8 @@
         <activity
             android:name=".products"
             android:label="DSC INDIA"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.satish1.MainActivity" />
@@ -30,31 +33,38 @@
 
         <activity
             android:name=".Vrla"
-            android:label="Vrla" >
+            android:label="Vrla"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Pasting"
-            android:label="Pasting" >
+            android:label="Pasting"
+            android:screenOrientation="portrait"  >
         </activity>
         <activity
             android:name=".Cutting"
-            android:label="Cutting" >
+            android:label="Cutting" 
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Contact1"
-            android:label="Contact1" >
+            android:label="Contact1"
+            android:screenOrientation="portrait"  >
         </activity>
         <activity
             android:name=".Curing"
-            android:label="Curing" >
+            android:label="Curing" 
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".High"
-            android:label="High" >
+            android:label="High" 
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Terminal"
-            android:label="Terminal" >
+            android:label="Terminal" 
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

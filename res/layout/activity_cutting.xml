@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.dsc.dscindia.Pasting"
-    android:background="@drawable/background">
+    android:background="@drawable/hexback">
  <ScrollView 
        android:id="@+id/scrollView7"
        android:layout_width="wrap_content"
@@ -18,138 +18,294 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-    <ImageView
-        android:layout_width="400dip"
-        android:layout_height="45dip"
-        android:id="@+id/imageView10"
-        android:background="@drawable/logo1"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="250dip"
-        android:layout_height="57dip"
-        android:id="@+id/imageView11"
-        android:background="@drawable/logo2"
-        android:src="@drawable/logo2"
-        android:layout_below="@+id/imageView10"
-        android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="400dip"
+            android:layout_height="45dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo1" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="60dip"
-        android:layout_height="30dip"
-        android:text="Home"
-        android:id="@+id/button6"
-        android:background="#ffc8c8c8"
-        android:clickable="true"
-        android:textColor="#ff000000"
-        android:textSize="10dip"
-        android:layout_alignWithParentIfMissing="false"
-        android:textStyle="normal"
-        android:layout_below="@+id/imageView11"
-        android:layout_alignLeft="@+id/imageView11"
-        android:layout_alignStart="@+id/imageView11" />
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="250dip"
+            android:layout_height="57dip"
+            android:layout_below="@+id/imageView10"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo2"
+            android:src="@drawable/logo2" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="60dip"
-        android:layout_height="30dip"
-        android:text="Products"
-        android:id="@+id/button7"
-        android:textSize="10dip"
-        android:clickable="true"
-        android:textColor="#ff000000"
-        android:background="#990012"
-        android:textStyle="normal"
-        android:layout_alignTop="@+id/button6"
-        android:layout_toRightOf="@+id/button6"
-        android:layout_toEndOf="@+id/button6" />
+        <Button
+            android:id="@+id/button6"
+            style="@style/cusbut"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignLeft="@+id/imageView11"
+            android:layout_alignStart="@+id/imageView11"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_below="@+id/imageView11"
+            android:background="@drawable/cusbut1"
+            android:clickable="true"
+            android:text="Home"
+            android:alpha="0.7"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="60dip"
-        android:layout_height="30dip"
-        android:text="Contact"
-        android:id="@+id/button8"
-        android:textSize="10dip"
-        android:clickable="true"
-        android:textColor="#ff000000"
-        android:background="#ffc8c8c8"
-        android:textStyle="normal"
-        android:layout_alignTop="@+id/button7"
-        android:layout_toRightOf="@+id/button7"
-        android:layout_toEndOf="@+id/button7" />
+        <Button
+            android:id="@+id/button7"
+            style="@style/cusbut"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignTop="@+id/button6"
+            android:layout_toEndOf="@+id/button6"
+            android:layout_toRightOf="@+id/button6"
+            android:background="@drawable/cusbut1"
+            android:clickable="true"
+            android:text="Products"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
 
-    <ImageView
-        android:layout_width="500dip"
-        android:layout_height="320dip"
-        android:id="@+id/imageView12"
-        android:background="#ffffffff"
-        android:layout_below="@+id/button6"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/button8"
+            style="@style/cusbut"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignTop="@+id/button7"
+            android:layout_toEndOf="@+id/button7"
+            android:layout_toRightOf="@+id/button7"
+            android:background="@drawable/cusbut1"
+            android:clickable="true"
+            android:alpha="0.7"
+            android:text="Contact"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="CUTTING MACHINE"
-        android:id="@+id/textView29"
-        android:textStyle="bold|italic"
-        android:textColor="#ffa4090a"
-        android:textIsSelectable="false"
-        android:typeface="monospace"
-        android:visibility="visible"
-        android:textSize="17dip"
-        android:layout_alignTop="@+id/imageView12"
-        android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button6"
+            android:layout_centerHorizontal="true"
+            android:text="CUTTING MACHINE"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffa4090a"
+            android:textIsSelectable="false"
+            android:textSize="17dip"
+            android:textStyle="bold|italic"
+            android:typeface="monospace"
+            android:visibility="visible" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView29"
+            android:background="@drawable/black"
+            android:alpha="0.7"
+            android:orientation="vertical">
+            <ImageView 
+                android:id="@+id/image1"
+                android:layout_width="220dip"
+                android:layout_height="220dip"
+                android:layout_marginLeft="35dip"
+                android:layout_marginTop="35dip"
+                android:background="@drawable/tron5"/>
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:textSize="17dip"
+                android:text="Max.range of board cutting including pole(L*W)"/>
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="180mm-350(410)mm\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text3"
+                android:textSize="17dip"
+                android:text="Cuttable thickness"/>
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="60-70(mm)\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text5"
+                android:textSize="17dip"
+                android:text="Time of single work cycle"/>
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="6sec\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text7"
+                android:textSize="17dip"
+                android:text="Velocity of main cycle"/>
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="2250r/min\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text9"
+                android:textSize="17dip"
+                android:text="Loadable number of saw blades"/>
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="1-6 PCS\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text11"
+                android:textSize="17dip"
+                android:text="Specifications of saw blade"/>
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="(T1.6*3.0)305*30*100T\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text13"
+                android:textSize="17dip"
+                android:text="Specifications of pessure plate cylinder"/>
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="SC50*75\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text15"
+                android:textSize="17dip"
+                android:text="Specifications of safety door cylinder"/>
+            <TextView
+                android:id="@+id/text16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="SC32*300\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text17"
+                android:textSize="17dip"
+                android:text="Main motor"/>
+            <TextView
+                android:id="@+id/text18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="3Q 415V 1.5kW 50Hz\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text19"
+                android:textSize="17dip"
+                android:text="Input atmosphere pressure"/>
+            <TextView
+                android:id="@+id/text20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="0.4Mpa-0.5Mpa\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text21"
+                android:textSize="17dip"
+                android:text="Air flow"/>
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="0.12m3/min\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text23"
+                android:textSize="17dip"
+                android:text="Machine outline dimensions(L*W*A)"/>
+            <TextView
+                android:id="@+id/text24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="1250*1240*1350(mm)\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text25"
+                android:textSize="17dip"
+                android:text="Machine Weight"/>
+            <TextView
+                android:id="@+id/text26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="500kg\n"/>
+              <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text27"
+                android:textSize="17dip"
+                android:text="Packing dimensions"/>
+            <TextView
+                android:id="@+id/text28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:text="1360*1110*1550(mm)\n"/>
+            
+        </LinearLayout>
 
-    <ImageView
-        android:layout_width="150dip"
-        android:layout_height="250dip"
-        android:id="@+id/imageView14"
-        android:background="@drawable/cuttingpage"
-        android:layout_below="@+id/textView29"
-        android:layout_alignLeft="@+id/button8"
-        android:layout_alignStart="@+id/button8" />
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="200sp"
+            android:layout_height="15sp"
+            android:layout_alignLeft="@+id/button8"
+            android:layout_alignParentBottom="true"
+            android:text="copyrights @ DSC INDIA control &amp; machineries Pvt.Ltd. Bangalore: 560099, phone: 080-27839989, mob: +91-9740608888."
+            android:textColor="#ffa9a9a9"
+            android:textSize="6sp" />
 
-    <TextView
-        android:layout_width="200sp"
-        android:layout_height="15sp"
-        android:text="copyrights @ DSC INDIA control &amp; machineries Pvt.Ltd. Bangalore: 560099, phone: 080-27839989, mob: +91-9740608888."
-        android:id="@+id/textView30"
-        android:textColor="#ffa9a9a9"
-        android:textSize="6sp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/imageView14"
-        android:layout_alignStart="@+id/imageView14" />
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView29"
+            android:text="DS-149 Cutting Machine"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal|italic" />
+    </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="DS-149 Cutting Machine"
-        android:id="@+id/textView31"
-        android:textColor="#ff000000"
-        android:textStyle="normal|italic"
-        android:textSize="10dip"
-        android:layout_below="@+id/imageView13"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="120dip"
-        android:layout_height="100dip"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageView14"
-        android:layout_marginTop="35dp"
-        android:adjustViewBounds="true"
-        android:background="@drawable/cutting" />
-
-</RelativeLayout>
 </ScrollView>
 </RelativeLayout>

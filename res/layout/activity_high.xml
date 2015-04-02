@@ -5,7 +5,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.dsc.dscindia.Pasting"
-    android:background="@drawable/background">
+    android:background="@drawable/hexback"
+    >
 
  <ScrollView
      android:id="@+id/scrollView7"
@@ -15,154 +16,453 @@
      android:layout_alignParentStart="true"
      android:fadeScrollbars="true"
      android:scrollbars="horizontal|vertical"
-     android:verticalScrollbarPosition="right" >
+     android:verticalScrollbarPosition="right"
+      >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-    <ImageView
-        android:layout_width="400dip"
-        android:layout_height="45dip"
-        android:id="@+id/imageView10"
-        android:background="@drawable/logo1"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="250dip"
-        android:layout_height="57dip"
-        android:id="@+id/imageView11"
-        android:background="@drawable/logo2"
-        android:src="@drawable/logo2"
-        android:layout_below="@+id/imageView10"
-        android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="250dip"
+            android:layout_height="57dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo2"
+            android:src="@drawable/logo2" />
 
-    <Button
-        style="@style/cusbut1"
-        android:layout_width="60dip"
-        android:layout_height="30dip"
-        android:text="Home"
-        android:id="@+id/button6"
-        android:background="@drawable/cusbut1"
-        android:clickable="true"
-        android:textColor="#ff000000"
-        android:textSize="10dip"
-        android:layout_alignWithParentIfMissing="false"
-        android:textStyle="normal"
-        android:layout_below="@+id/imageView11"
-        android:layout_alignLeft="@+id/imageView11"
-        android:layout_alignStart="@+id/imageView11" />
+        <Button
+            android:id="@+id/button6"
+            style="@style/cusbut1"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignLeft="@+id/imageView11"
+            android:layout_alignStart="@+id/imageView11"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_below="@+id/imageView11"
+            android:alpha="0.7"
+            android:background="@drawable/cusbut1"
+            android:clickable="true"
+            android:text="Home"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
 
-    <Button
-        style="@style/cusbut1"
-        android:layout_width="60dip"
-        android:layout_height="30dip"
-        android:text="Products"
-        android:id="@+id/button7"
-        android:textSize="10dip"
-        android:clickable="true"
-        android:textColor="#ff000000"
-        android:background="@drawable/cusbut1"
-        android:textStyle="normal"
-        android:layout_alignTop="@+id/button6"
-        android:layout_toRightOf="@+id/button6"
-        android:layout_toEndOf="@+id/button6" />
+        <Button
+            android:id="@+id/button7"
+            style="@style/cusbut1"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignTop="@+id/button6"
+            android:layout_toEndOf="@+id/button6"
+            android:layout_toRightOf="@+id/button6"
+            android:background="@drawable/cusbut1"
+            android:clickable="true"
+            android:text="Products"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
 
-    <Button
-        style="@style/cusbut1"
-        android:layout_width="60dip"
-        android:layout_height="30dip"
-        android:text="Contact"
-        android:id="@+id/button8"
-        android:textSize="10dip"
-        android:clickable="true"
-        android:textColor="#ff000000"
-        android:background="@drawable/cusbut1"
-        android:textStyle="normal"
-        android:layout_alignTop="@+id/button7"
-        android:layout_toRightOf="@+id/button7"
-        android:layout_toEndOf="@+id/button7" />
+        <Button
+            android:id="@+id/button8"
+            style="@style/cusbut1"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignTop="@+id/button7"
+            android:layout_toEndOf="@+id/button7"
+            android:layout_toRightOf="@+id/button7"
+            android:alpha="0.7"
+            android:background="@drawable/cusbut1"
+            android:clickable="true"
+            android:text="Contact"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal" />
 
-    <ImageView
-        android:layout_width="500dip"
-        android:layout_height="600dip"
-        android:id="@+id/imageView12"
-        android:background="#ffffffff"
-        android:layout_below="@+id/button6"
-        android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="500dip"
+            android:layout_height="600dip"
+            android:layout_below="@+id/button6"
+            android:layout_centerHorizontal="true"
+            android:background="#00ffffff" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="HIGH FURNACE CASTING"
-        android:id="@+id/textView29"
-        android:textStyle="bold|italic"
-        android:textColor="#ffa4090a"
-        android:textIsSelectable="false"
-        android:typeface="monospace"
-        android:visibility="visible"
-        android:textSize="17dip"
-        android:layout_alignTop="@+id/imageView12"
-        android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView12"
+            android:layout_centerHorizontal="true"
+            android:text="HIGH FURNACE CASTING"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffa4090a"
+            android:textIsSelectable="false"
+            android:textSize="17dip"
+            android:textStyle="bold|italic"
+            android:typeface="monospace"
+            android:visibility="visible" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="400dip"
-        android:id="@+id/imageView14"
-        android:background="@drawable/highpage"
-        android:layout_below="@+id/textView29"
-        android:layout_alignLeft="@+id/button8"
-        android:layout_alignStart="@+id/button8" />
+       
 
-    <ImageView
-        android:layout_width="150dip"
-        android:layout_height="100dip"
-        android:id="@+id/imageView15"
-        android:background="@drawable/highpagee"
-        android:layout_below="@+id/imageView14"
-        android:layout_alignLeft="@+id/imageView14"
-        android:layout_alignStart="@+id/imageView14" />
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView29"
+            android:text="DS-147-10 High Furnace Casting"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff000000"
+            android:textSize="10dip"
+            android:textStyle="normal|italic" />
 
-    <TextView
-        android:layout_width="200sp"
-        android:layout_height="15sp"
-        android:text="copyrights @ DSC INDIA control &amp; machineries Pvt.Ltd. Bangalore: 560099, phone: 080-27839989, mob: +91-9740608888."
-        android:id="@+id/textView30"
-        android:textColor="#ffa9a9a9"
-        android:textSize="6sp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/imageView15"
-        android:layout_alignStart="@+id/imageView15" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView29"
+            android:alpha="0.7"
+            android:background="@drawable/black"
+            android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="DS-147-10 High Furnace Casting"
-        android:id="@+id/textView31"
-        android:textColor="#ff000000"
-        android:textStyle="normal|italic"
-        android:textSize="10dip"
-        android:layout_below="@+id/imageView13"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Suitable for all types of Alloys\n"
+                android:textSize="20dip" />
 
-   
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="250dip"
+                android:layout_height="250dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/tron3" />
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="120dip"
-        android:layout_height="100dip"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView31"
-        android:layout_alignTop="@+id/imageView14"
-        android:layout_marginTop="41dp"
-        android:adjustViewBounds="true"
-        android:background="@drawable/high" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:text="Casting Size"
+                android:textSize="17dip" />
 
-</RelativeLayout>
-</ScrollView>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="385mm*180mm/445mm*180mm(optional wide frame)\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casting Thickness"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1.0mm to 4.0mm\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Producing Up to"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="20grids/min\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Patented Designs\n"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/tectView9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Saves energy and lead usage"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="USD $20,000/year\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Max.range of Casting include Luds(L*W)"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="385*180(mm)(optical 445mm)\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Casting Speed"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1.0~4.0(mm)\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Casting of Lead Furnace"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="800kg\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Elecctric heating pipe of Lead furnace"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="220V/240V 18kW(3kW*6pcs/group)\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ladle heater"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2.5kW/3.2kW\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Electric heating block of mould"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="380V/415V 1.2kW\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Specifications of conveying belt(L*W*T)"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1450*370*6\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Scrap material belt(L*W*T)"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4610*300*10\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView27"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Main motor"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="380V/415V 0.75kW\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView29"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Adjustable Cutting area(W)"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="100~180(mm)\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Adjustable Cutting area(L)"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="400mm\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mould Closing Pressure"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.4-0.6Mpa\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Input Air Pressure"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.5Mpa\n"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tectView37"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Air flow"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.15m3/min\n"
+                android:textSize="14dip" />
+             <TextView
+                android:id="@+id/tectView39"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Machine Outline Dimensions(L*W*H)"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2960*1020*1950(mm)\n"
+                android:textSize="14dip" />
+             <TextView
+                android:id="@+id/tectView41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Machine weight"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1300kg\n"
+                android:textSize="14dip" />
+             <TextView
+                android:id="@+id/tectView43"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Packing Measurements(L*W*H)"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3170*1150*2170(mm)\n"
+                android:textSize="14dip" />
+             <TextView
+                android:id="@+id/tectView45"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Packing Weight"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1500kg\n"
+                android:textSize="14dip" />
+        </LinearLayout>
+         <TextView
+            android:id="@+id/textView30"
+            android:layout_width="200sp"
+            android:layout_height="15sp"
+            android:layout_alignLeft="@+id/button8"
+            android:layout_alignParentBottom="true"
+            android:text="copyrights @ DSC INDIA control &amp; machineries Pvt.Ltd. Bangalore: 560099, phone: 080-27839989, mob: +91-9740608888."
+            android:textColor="#ffa9a9a9"
+            android:textSize="6sp" />
+    </RelativeLayout>
+    
+    </ScrollView>
 
 
 </RelativeLayout>

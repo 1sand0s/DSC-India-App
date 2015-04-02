@@ -54,8 +54,10 @@ import android.widget.TextView;
     	   public boolean onTouch(View v,MotionEvent e)
     	   {
     		   startActivity(new Intent(products.this,High.class));
+    		   
     		   return false;
     	   }
+    	   
        });
        past.setOnTouchListener(new OnTouchListener()
        {

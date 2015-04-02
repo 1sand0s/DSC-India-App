@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridView;
 
 
 public class High extends ActionBarActivity {
@@ -15,8 +16,10 @@ public class High extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_high);
-
+       
        Button Home=(Button) findViewById(R.id.button6);
+  
+      
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,4 +68,5 @@ public class High extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
